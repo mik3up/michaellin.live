@@ -52,6 +52,23 @@
         opacity: 1;
       }
 
+      .overlay2 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #fffffff0;
+      }
+
+      .card:hover .overlay2 {
+        opacity: .7;
+      }
+
       .flex-container {
         display: flex;
         /* background-color: DodgerBlue; */
@@ -95,7 +112,9 @@
 
       p {
         font-weight: 350;
+        color: black;
       }
+
     </style>
 
   </head>
@@ -201,7 +220,7 @@
     	<div class="container-fluid px-md-0">
     		<div class="row no-gutters justify-content-center pb-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Projects</h1>
+          	<!-- <h1 class="big big-2">Projects</h1> -->
             <h3 class="mb-4">Projects</h3>
           </div>
         </div>
@@ -209,30 +228,40 @@
         <center>
           <div class="flex-container">
             <div class="card">
-              <a href = "https://yum-me-website.s3-us-west-1.amazonaws.com/index.html" target="_yelp"><img src="images/project-yelp.png" alt="Avatar" width="100%">
+              <a href = "https://yum-me-website.s3-us-west-1.amazonaws.com/index.html" target="_yelp">
+                <figure>
+                  <img src="images/project-yelp.png" alt="Avatar" width="100%">
+                  <figcaption><p>Recommendation System</p></figcaption>
+                </figure>
                 <div class="overlay">
                   <div class="text_box">Recommendation System powered by 7 million Yelp reviews across Las Vegas & Phenoix region.</div>
                 </div>
               </a>
-              <div class="centered">Recommendation System</div>
             </div>
             <div class="card">
-              <a href="https://github.com/mik3up/Twitch-Chat-Analysis" target="_twitch"><img src="images/project-twitch.png" alt="Avatar" width="100%">
+              <a href="https://github.com/mik3up/Twitch-Chat-Analysis" target="_twitch">
+                <figure>
+                  <img src="images/project-twitch.png" alt="Avatar" width="100%">
+                  <figcaption><p>Sentiment Analysis</p></figcaption>
+                </figure>
                 <div class="overlay">
                   <div class="text_box">Provides sentiment analyses and score from live Twitch chat data</div>
                 </div>
               </a>
-              <div class="centered">Sentiment Analysis</div>
             </div>
 
             <div class="card">
-              <a href="https://dsi-fraud-casestudy.s3.amazonaws.com/portfolio-eda-dashboard.html" target="_fraud" ><img src="images/project-fraud.jpg" alt="Avatar" width="100%">
+              <a href="https://dsi-fraud-casestudy.s3.amazonaws.com/portfolio-eda-dashboard.html" target="_fraud" >
+                <figure>
+                  <img src="images/project-fraud.jpg" alt="Avatar" width="100%">
+                  <figcaption><p>Fraud Detection</p></figcaption>
+                </figure>
                 <div class="overlay">
                   <div class="text_box">Casestudy to identify fraudulent transactions for a web ticketing platform. </div>
                 </div>
               </a>
-              <div class="centered">Fraud Detection</div>
             </div>
+
 
           </div>
         </center>
@@ -245,12 +274,41 @@
         <div class="container-fluid px-md-0">
       		<div class="row no-gutters justify-content-center pb-5">
             <div class="col-md-12 heading-section text-center ftco-animate">
-            	<h1 class="big big-2">Dashboards</h1>
-              <h3 class="mb-4">Dashboards</h3>
+              <h3 class="mb-4">Tableau Dashboards</h3>
             </div>
           </div>
 
           <center>
+            <div class="flex-container">
+              <div class="card">
+                <a href = "https://public.tableau.com/profile/michael.lin#!/vizhome/SFConstructionDevelopmentPipeline2019Q1/dashboard" target="_tableau">
+                  <figure>
+                    <img src="images/dashboard-sfpipeline.png" alt="Avatar" width="100%">
+                    <figcaption><p>SF Construction Pipeline 2019 Q1</p></figcaption>
+                  </figure>
+                  <div class="overlay2">
+                    <div class="text_box"></div>
+                  </div>
+                </a>
+              </div>
+
+
+              <div class="card">
+                <a href = "https://public.tableau.com/profile/michael.lin#!/vizhome/HyundaiCampaignSales2017-2018/SalesDashboard" target="_tableau">
+                  <figure>
+                    <img src="images/dashboard-hyundai.png" alt="Avatar" width="100%">
+                    <figcaption><p>Hyundai Sales Campaign 2017-2018</p></figcaption>
+                  </figure>
+                  <div class="overlay2">
+                    <div class="text_box"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </center>
+
+
+          <!-- <center>
             <div class="flex-container">
               <div class="col-md-4 text-center d-flex ftco-animate">
     						<a href="https://public.tableau.com/profile/michael.lin#!/vizhome/HyundaiCampaignSales2017-2018/SalesDashboard" target="_tableau" class="services-1 shadow">
@@ -275,7 +333,7 @@
 
             </div>
 
-          </center>
+          </center> -->
 
 
       		</div>
